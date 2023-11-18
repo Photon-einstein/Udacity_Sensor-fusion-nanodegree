@@ -16,3 +16,5 @@ The main principles taught in this segment are:
 3. Filtering techniques
 4. Reading and streaming PCDs
 
+My final result is shown below, where the green points represent the street surface and the obstacles are marked in the red boxes.
+file:///home/tiago/Desktop/Udacity/2-Sensor_Fusion/1-Lidar_course/Lidar_Obstacle_detection_program_running.gif
