@@ -17,7 +17,6 @@ The main principles taught in this segment are:
 4. Reading and streaming PCDs
 
 My final result is shown below, where the green points represent the street surface and the obstacles are marked in the red boxes.
-file:
 
 ![Lidar_Obstacle_detection_program_running](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/c3b96c60-a25d-43d3-909d-c4f8c851ef4e)
 
