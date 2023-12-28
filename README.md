@@ -33,8 +33,9 @@ distance between matched keypoints in two successive images. Matched keypoints a
 so that Lidar pipeline could estimate the TTC using the closest distances of the bounding boxes to the ego vehicle in two successive frame.
 
 The output short video is shown below, where the preceding vehicle is tracked with a green box, 3D Lidar points on the vehicle trunk are projected to 
-the 2D frame (green points). TTC estimations based on Lidar and camera are reported on the top. The upper image contains the other bounding boxes of 
-all the vehicles in the road with the confidence of the model assigning those boudaries on top of the image.
+the 2D frame (green points). TTC estimations based on Lidar and camera are reported on the top. 
+The final result of this project is the estimation of the time to collision to the nearest vehicle, for the Camera and the LIDAR systems written on
+top of the frame captured by the our vehicle.
 
 ![Camera_3D_Object_Tracking_program_running](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/344b50a4-5fa2-4ff8-8905-cb149ec38565)
 
