@@ -8,7 +8,7 @@ results when attempting to determine the position and velocity of obstacles.
 **Note**: 
 Please clone the master branch for latest version of all projects. All projects are compiled using cmake (https://cmake.org/).
 
-## LiDAR Segment - Point Cloud Library
+## 1) LiDAR Segment - Point Cloud Library
 The Random Sample Consensus (RANSAC) principle was used to segment the ground plane from point cloud data. Obstacle Clustering was 
 performed using recursion, with improved efficiency using the Kd-tree data structure.
 
@@ -23,7 +23,7 @@ My final result is shown below, where the green points represent the street surf
 
 ![Lidar_Obstacle_detection_program_running](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/c3b96c60-a25d-43d3-909d-c4f8c851ef4e)
 
-## 3D Object Tracking based on Camera
+## 2) 3D Object Tracking based on Camera
 
 This project tracks the preceding vehicle in the same lane and estimates the time-to-collision (TTC) based on both camera images and Lidar data. 
 The construction of the camera TTC estimation pipeline, demanded the implementation of the keypoint detection, descriptor extraction, and methods 
