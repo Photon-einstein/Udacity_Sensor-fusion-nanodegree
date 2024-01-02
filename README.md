@@ -60,4 +60,5 @@ The main principles taught in this segment are:
 -   2D CFAR (Constant False Alarm Rate);
 -   Simulation in Matlab;
 
+![Radar_project_program_output](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/d647ba5a-6773-403a-ba67-90edf7ae657a)
 
