@@ -40,3 +40,24 @@ top of the frame captured by our vehicle.
 
 ![Camera_3D_Object_Tracking_program_running](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/344b50a4-5fa2-4ff8-8905-cb149ec38565)
 
+## 3)      Radar
+
+This project focuses on developing a radar system using sensor fusion techniques. The goal is to detect and track objects in the environment using data from radar sensors. By combining the measurements from multiple radar sensors, we can improve the accuracy and reliability of object detection and tracking.
+
+I was used the Fast Fourier Transform 2D  on the data obtrained from the Frequency Modulated Continuous Wave (FMCW) Radar to obtain the Range-Doppler Map. After that, the Cell Averaging Constant Fast Alarm Rate (CA - CFAR) was conducted to dynamically filter out noise and to retrieve the peak corresponding to the obstacle, giving the range and the velocity estimation. 
+
+From the image below, one can deduce that the obstacle has a displacement of 90m and a velocity of 40m/s.
+
+The main principles taught in this segment are:
+
+-   Frequency Modulated Continuous Wave (FMCW);
+-   Signal propagation;
+-   Target cinematic; 
+-   Response generation;
+-   FFT 1D;
+-   FFT 2D;
+-   Range & Doppler generation;
+-   2D CFAR (Constant False Alarm Rate);
+-   Simulation in Matlab;
+
+
