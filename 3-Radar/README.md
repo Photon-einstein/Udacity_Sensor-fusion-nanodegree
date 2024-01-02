@@ -22,7 +22,7 @@ $ ./matlab
 
 Tutorial for MATLAB is available [here](https://www.mathworks.com/learn/tutorials/matlab-onramp.html).
 
-### II. Knowledge build up with pratical exercises
+### II. Knowledge build up with practical exercises
 
 [Radar Target Generation and Detection exercises](./1-Exercises)
 
