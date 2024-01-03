@@ -60,7 +60,8 @@ The main principles taught in this segment are:
 -   2D CFAR (Constant False Alarm Rate);
 -   Simulation in Matlab;
 
-The final result of the project is the estimation of the range and velocity using 2D CFAR, clearing out the noise of the result, leaving only binary results.  
+The final result of the project is the estimation of the range and velocity using 2D CFAR, clearing out the noise of the result,  
+leaving only binary results.  
 The intermediary results were the 1D FFT in the range dimension and the 2D FFT Range Doppler Map.
 
 ![Radar_project_program_output](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/d647ba5a-6773-403a-ba67-90edf7ae657a)
