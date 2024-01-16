@@ -66,3 +66,18 @@ The intermediary results were the 1D FFT in the range dimension and the 2D FFT R
 
 ![Radar_project_program_output](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/d647ba5a-6773-403a-ba67-90edf7ae657a)
 
+## 4)        Kalman Filter
+
+This project focuses on implementing an Unscented Kalman Filter (UKF) to estimate the position and velocity of multiple cars on a highway using noisy lidar and radar measurements. The UKF algorithm is a nonlinear extension of the classic Kalman Filter and is capable of handling non-linear motion models and non-linear measurement functions.
+
+The Unscented Kalman Filter takes in noisy measurement data as input and provides a robust estimation of displacement and velocity values of obstacles. It is used the Constant Turn Rate and Velocity Magnitude Model (CTRV) model to provide predictions of future state of obstacles, that are then weighted against sensor readings to provide reliable estimations that minimizes prediction or sensor error. In the image below, the green path represents the predicted path by the Kalman Filter. The Root Mean Squared Error (RMSE) between estimation and ground truth values are successfully minimized.
+
+The main principles taught in this course are:
+
+-  Normal Kalman Filter (1D)
+-  Extended Kalman Filter (2D)
+-  Unscented Kalman Filter (2D)
+
+![Unscented_Kalman_filter_program_output](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/41eea4f4-464d-497e-ae25-e1e5eb75f14b)
+
+
