@@ -70,7 +70,7 @@ The intermediary results were the 1D FFT in the range dimension and the 2D FFT R
 
 This project focuses on implementing an Unscented Kalman Filter (UKF) to estimate the position and velocity of multiple cars on a highway using noisy lidar and radar measurements. The UKF algorithm is a nonlinear extension of the classic Kalman Filter and is capable of handling non-linear motion models and non-linear measurement functions.
 
-The Unscented Kalman Filter takes in noisy measurement data as input and provides a robust estimation of displacement and velocity values of obstacles. It is used the Constant Turn Rate and Velocity Magnitude Model (CTRV) model to provide predictions of future state of obstacles, that are then weighted against sensor readings to provide reliable estimations that minimizes prediction or sensor error. In the image below, the green path represents the predicted path by the Kalman Filter. The Root Mean Squared Error (RMSE) between estimation and ground truth values are successfully minimized.
+The UKF takes in noisy measurement data as input and provides a robust estimation of displacement and velocity values of obstacles. It is used the Constant Turn Rate and Velocity Magnitude Model (CTRV) model to provide predictions of future state of obstacles, that are then weighted against sensor readings to provide reliable estimations that minimizes prediction or sensor error. In the image below, the green path represents the predicted path by the Kalman Filter. The Root Mean Squared Error (RMSE) between estimation and ground truth values are successfully minimized.
 
 The main principles taught in this course are:
 
