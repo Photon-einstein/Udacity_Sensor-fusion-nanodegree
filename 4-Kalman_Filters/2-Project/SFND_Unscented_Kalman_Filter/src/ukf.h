@@ -1,6 +1,9 @@
 #ifndef UKF_H
 #define UKF_H
 
+#include <iostream>
+#include <stdexcept>
+
 #include "Eigen/Dense"
 #include "measurement_package.h"
 
@@ -41,6 +44,43 @@ class UKF {
    */
   void UpdateRadar(MeasurementPackage meas_package);
 
+  /**
+   * Creates the augmented state covariance matrix in the prediction step
+   */
+  Eigen::MatrixXd CreationAugmentedSigmaPoints();
+
+  /**
+   * Predicts new sigma points using as input the augmented sigma points into the CTRV
+   * (Constant Turn Rate and Velocity Magnitude Model function)
+   * @param Xsig_aug  The augmented sigma points
+   * @param delta_t   Time difference in seconds 
+   */
+  void SigmaPointPrediction(const Eigen::MatrixXd &Xsig_aug, double delta_t);
+
+  /**
+   * Predicts new mean and covariance matrix, using as input
+   * the new sigma points stored inside ukf class 
+   */
+  void PredictMeanAndCovariance(); 
+
+  /**
+   * Predicts mean predicted measurement and covariance matrix S 
+   * from new sigma points
+   * @param z_pred    The mean predicted measurement (out value)
+   * @param S         The covariance matrix (out value) 
+   * @param Zsig      The matrix for sigma points in measurement space (out value)
+   */
+  void PredictRadarMeasurement(Eigen::VectorXd &z_pred, Eigen::MatrixXd &S, Eigen::MatrixXd &Zsig); 
+  
+  /**
+   * Predicts new state vector X values and also the new state covariance matrix P
+   * @param z_pred    The mean predicted measurement
+   * @param S         The covariance matrix
+   * @param Zsig      The matrix for sigma points in measurement space
+   * @param z         The raw measurements from the radar sensor
+   * @param n_z       Number of elements in the vector z
+   */
+  void FinalUpdateStepRadar(const Eigen::VectorXd &z_pred, const Eigen::MatrixXd &S, const Eigen::MatrixXd &Zsig, const Eigen::VectorXd &z, const int n_z);
 
   // initially set to false, set to true in first call of ProcessMeasurement
   bool is_initialized_;

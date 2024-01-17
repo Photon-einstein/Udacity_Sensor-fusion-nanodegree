@@ -20,7 +20,7 @@ struct Ray
 	// horizontalAngle: the angle of direction the ray travels on the xy plane
 	// verticalAngle: the angle of direction between xy plane and ray 
 	// 				  for example 0 radians is along xy plane and pi/2 radians is stright up
-	// resoultion: the magnitude of the ray's step, used for ray casting, the smaller the more accurate but the more expensive
+	// resolution: the magnitude of the ray's step, used for ray casting, the smaller the more accurate but the more expensive
 
 	Ray(Vect3 setOrigin, double horizontalAngle, double verticalAngle, double setResolution)
 		: origin(setOrigin), resolution(setResolution), direction(resolution*cos(verticalAngle)*cos(horizontalAngle), resolution*cos(verticalAngle)*sin(horizontalAngle),resolution*sin(verticalAngle)),
@@ -86,11 +86,11 @@ struct Lidar
 		: cloud(new pcl::PointCloud<pcl::PointXYZ>()), position(0,0,3.0)
 	{
 		// TODO:: set minDistance to 5 to remove points from roof of ego car
-		minDistance = 0;
+		minDistance = 5;
 		maxDistance = 120;
 		resoultion = 0.2;
 		// TODO:: set sderr to 0.2 to get more interesting pcd files
-		sderr = 0.02;
+		sderr = 0.2;
 		cars = setCars;
 		groundSlope = setGroundSlope;
 
@@ -100,7 +100,7 @@ struct Lidar
 		double steepestAngle =  24.8*(-pi/180);
 		double angleRange = 26.8*(pi/180);
 		// TODO:: set to pi/64 to get higher resoultion pcd
-		double horizontalAngleInc = pi/2250;
+		double horizontalAngleInc = pi/64;
 
 		double angleIncrement = angleRange/numLayers;
 
