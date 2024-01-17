@@ -1,3 +1,0 @@
-/workspace/home/SFND_Lidar_Obstacle_Detection/build/CMakeFiles/rebuild_cache.dir
-/workspace/home/SFND_Lidar_Obstacle_Detection/build/CMakeFiles/environment.dir
-/workspace/home/SFND_Lidar_Obstacle_Detection/build/CMakeFiles/edit_cache.dir
