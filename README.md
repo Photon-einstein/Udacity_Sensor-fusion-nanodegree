@@ -81,3 +81,6 @@ The main principles taught in this course are:
 ![Unscented_Kalman_filter_program_output](https://github.com/Photon-einstein/Udacity_Sensor-fusion-nanodegree/assets/31144077/41eea4f4-464d-497e-ae25-e1e5eb75f14b)
 
 
+## Certificate of completion
+
+https://graduation.udacity.com/confirm/e/815fcad4-4f6d-11ee-aec1-870284da2dad
